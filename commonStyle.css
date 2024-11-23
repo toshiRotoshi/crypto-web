@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --color-white: #ffffff;
+  --color-light: #f0eff5;
+  --color-gray-light: #86848c;
+  --color-gray-dark: #56555e;
+  --color-dark: #27282f;
+  --color-primary: #27282f;
+  --color-success: rgb(34, 202, 75);
+  --color-danger: rgb(255, 67, 54);
+  --color-warning: rgb(234, 181, 7);
+  --color-purple: rgb(160, 99, 245);
+  --color-primary-light: rgba(71, 7, 234, 0.2);
+  --color-success-light: rgba(34, 202, 75, 0.2);
+  --color-danger-light: rgba(255, 67, 54, 0.2);
+  --color-purple-light: rgba(160, 99, 245, 0.2);
+  --card-padding: 1.6rem;
+  --padding-1: 1rem;
+  --padding-2: 8px;
+  --card-border-radius: 1.6rem;
+  --border-radius-1: 1rem;
+  --border-radius-2: 6px;
+}
+
+/* after end, when js change theme */
+
+.dark-theme {
+  --color-white: #131316;
+  --color-light: #23232a;
+  --color-dark: #ddd;
+  --color-gray-dark: #adacb5;
+}
+
+nav .profile-area .theme-btn {
+  display: flex;
+  background: var(--color-light);
+  width: 5rem;
+  height: 2rem;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+}
+
+nav .profile-area .theme-btn span {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+nav .profile-area .theme-btn .active {
+  background: var(--color-dark);
+  border-radius: var(--border-radius-2);
+  color: var(--color-white);
+}
+
+section {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.gridSection {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 5em;
+}
+
+#sectionPic {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+}
+
+.sectionPic img {
+  width: 100%;
+}
+
+p {
+  color: var(--lightgrey);
+}
+
+.darkPara {
+  color: var(--darkText);
+  font-weight: 500;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.1rem;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+}
+
+.btn1 {
+  margin-right: 1em;
+}
+
+.btn2 {
+  border: none;
+}
+
+.primaryBtn {
+  background-color: var(--primarycolor);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.bouncepic img {
+  animation: bounce 15s infinite;
+}
+
+.sectionHeader {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 0.7em;
+}
+
+.sectionPara {
+  font-size: 1.1rem;
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    width: 85%;
+  }
+  .gridSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sectionHeader {
+    font-size: 3em;
+  }
+}
